@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set timeout and clear time out</title>
+</head>
+<img src="watch.png" alt="">
+<style>
+    #time
+    {
+        text-decoration: solid;
+    }
+    .container{
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 45px;
+        border: 2px solid rebeccapurple;
+        border-radius: 10px;
+        background-color: cornflowerblue;
+        font-style: inherit;
+
+        margin-top: 200px;
+        padding: 34px;
+    }
+</style>
+<body>
+    <div class="container">
+       Time now  <span id="time"></span> 
+    </div>
+    <script>
+        /*console.log('hiii i am Arvind');
+
+        function greet(name,helloji)
+        {
+            console.log("hello goood morning" +name+" "+helloji);
+        }*/
+        //setTimeout(greet,3000,"Arvind","take care bache");
+        //setInterval(greet,1000,"Arvind","take care bache");
+
+        function displaytime()
+        {
+            time=new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML =time;
+        }
+        setInterval(displaytime,1000);
+    </script>
+</body>
+</html>
